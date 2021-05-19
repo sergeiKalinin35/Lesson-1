@@ -8,15 +8,51 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet var helloSLabel: UILabel!
+    @IBOutlet var toggleTextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-       
+      
+        helloSLabel.isHidden = true
+        helloSLabel.textColor = .red
+        toggleTextButton.layer.cornerRadius = 10
         
-        view.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
-    }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+}
 
+    @IBAction func toggleTextButtonPressed() {
+        if helloSLabel.isHidden {
+            helloSLabel.isHidden = false// .toggle() на противоположное значение.
+            toggleTextButton.setTitle("Hide Text", for: .normal)
+            
+        } else {
+            
+            helloSLabel.isHidden = true // .toggle() на противоположное значение.
+            
+            toggleTextButton.setTitle("Show Text", for: .normal)
+            
+
+        }
+        
+        
+        
+    }
+    
+    
 
 }
 

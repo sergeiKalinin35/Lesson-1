@@ -24,15 +24,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOI-de-dwB">
-                                <rect key="frame" x="127.5" y="606" width="159" height="34"/>
+                                <rect key="frame" x="84.5" y="597" width="245" height="43"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="159" id="a8K-es-TCC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="245" id="a8K-es-TCC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="31"/>
                                 <state key="normal" title="Show Text">
                                     <color key="titleColor" systemColor="opaqueSeparatorColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="JnA-Ju-dtJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,6 +48,10 @@
                             <constraint firstItem="aoF-lw-jUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="z7L-OW-9bq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloSLabel" destination="aoF-lw-jUx" id="4IA-EJ-HzN"/>
+                        <outlet property="toggleTextButton" destination="DOI-de-dwB" id="Kqu-Kg-VMN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
